@@ -1,0 +1,17 @@
+{
+  "name": "promise-debug",
+  "version": "1.0.0",
+  "description": "Chrome developer tools extension for debugging non-native promises",
+  "main": "index.js",
+  "repository": "https://github.com/lextiz/promise-debug.git",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "promise",
+    "debug",
+    "chrome"
+  ],
+  "author": "Alexander Bolshakov",
+  "license": "EPL-1.0"
+}
