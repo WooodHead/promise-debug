@@ -1,35 +1,14 @@
 {
-"manifest_version": 2,
-"name": "Promises debugger",
-"description": "Extendes the Chrome Developer Tools to support debugging of non-native promises",
-		"version": "1.0.0",
-		"minimum_chrome_version": "43",
-		"icons": {
-			"48": "icons/icon48.png",
-			"128": "icons/icon128.png"
-		},
-
-		"devtools_page": "main.html",
-
-		"content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
-		"web_accessible_resources": [ "main.html"],
-
-		"background": {
-			"scripts": [ "background.js" ],
-			"persistent": false
-		},
-
-		"permissions": [
-			"file:///*",
-		  "http://*/*",
-		  "https://*/*"
-		],
-
-		"content_scripts": [
-		{
-			"matches": ["<all_urls>"],
-			"js": ["start.js"],
-      "run_at": "document_start"
-      }
-		]
+    "manifest_version": 2,
+    "name": "Promises debugger",
+    "description": "Extendes the Chrome Developer Tools to support debugging of non-native promises",
+    "version": "0.0.1",
+    "devtools_page": "main.html",
+    "content_security_policy": "default-src 'self'  chrome-extension-resource: ; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-eval';  connect-src *; frame-src *;",
+    "web_accessible_resources": ["*"],
+    "content_scripts": [{
+        "matches": ["<all_urls>"],
+        "js": ["index.js"],
+        "run_at": "document_start"
+    }]
 }

@@ -12,6 +12,7 @@
     "debug",
     "chrome"
   ],
+  "devtools_page": "main.html",
   "author": "Alexander Bolshakov",
   "license": "EPL-1.0"
 }
